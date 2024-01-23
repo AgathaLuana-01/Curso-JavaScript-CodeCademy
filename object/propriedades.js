@@ -36,12 +36,6 @@ alienShip.takeOff();
 
 
 //Passar objetos por referência
-let spaceship = {
-    "Fuel Type": "Turbo Fuel",
-    homePlanet: "Earth",
-  };
-  
-  // Write your code below
   let greenEnergy = obj => {
     obj['Fuel Type'] = "avocado oil"
   };
@@ -54,30 +48,9 @@ let spaceship = {
   remotelyDisable(spaceship);
   
   console.log(spaceship);
-  
-  //Setter
-  const robot = {
-    _model: "1E78V2",
-    _energyLevel: 100,
-    _numOfSensors: 15,
-    get numOfSensors() {
-      if (typeof this._numOfSensors === "number") {
-        return this._numOfSensors;
-      } else {
-        return "Sensors are currently down.";
-      }
-    },
-    set numOfSensors(num) {
-      if (typeof num === "number" && num >= 0) {
-        this._numOfSensors = num;
-      } else {
-        console.log("Pass in a number that is greater than or equal to 0");
-      }
-    },
-  };
-  
-  //Use o numOfSensorsmétodo setter robotpara atribuir _numOfSensorsa 100.
-  robot.numOfSensors = 100;
-  
-  console.log(robot.numOfSensors);
+
+
+
+
+
   
